@@ -1,0 +1,19 @@
+// 
+// THIS FILE HAS BEEN GENERATED AUTOMATICALLY
+// DO NOT CHANGE IT MANUALLY UNLESS YOU KNOW WHAT YOU'RE DOING
+// 
+// GENERATED USING @colyseus/schema 2.0.11
+// 
+
+
+import io.colyseus.serializer.schema.Schema;
+import io.colyseus.serializer.schema.types.*;
+
+class MyRoomState extends Schema {
+	@:type("map", OtherPlayer)
+	public var players: MapSchema<OtherPlayer> = new MapSchema<OtherPlayer>();
+
+	@:type("number")
+	public var state: Dynamic = 0;
+
+}
